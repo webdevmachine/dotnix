@@ -22,6 +22,9 @@
 
         editorconfig-checker.enable = true;
         treefmt.enable = true;
+
+        flake-checker.enable = true;
+        nil.enable = true;
       };
 
       devshells.default = {
