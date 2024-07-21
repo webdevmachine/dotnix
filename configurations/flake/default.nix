@@ -1,1 +1,6 @@
-{ imports = [ ../../profiles/flake/devshell.nix ]; }
+{
+  imports = [
+    ../../profiles/flake/devshell.nix
+    ../../profiles/flake/formatter.nix
+  ];
+}
