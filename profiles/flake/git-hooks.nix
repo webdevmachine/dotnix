@@ -15,6 +15,10 @@
         mixed-line-endings.enable = true;
         trim-trailing-whitespace.enable = true;
         typos.enable = true;
+
+        conform.enable = true;
+        check-merge-conflicts.enable = true;
+        forbid-new-submodules.enable = true;
       };
 
       devshells.default = {
