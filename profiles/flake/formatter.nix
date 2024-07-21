@@ -10,7 +10,9 @@
 
         package = pkgs.treefmt2;
 
-        programs = { };
+        programs = {
+          prettier.enable = true;
+        };
       };
 
       devshells.default.commands = [ { package = config.treefmt.build.wrapper; } ];
