@@ -1,1 +1,1 @@
-{ imports = [ ]; }
+{ imports = [ ../../profiles/flake/devshell.nix ]; }
