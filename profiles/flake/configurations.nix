@@ -1,0 +1,7 @@
+{
+  flake = {
+    nixosConfigurations = { };
+    darwinConfigurations = { };
+    homeConfigurations = { };
+  };
+}
