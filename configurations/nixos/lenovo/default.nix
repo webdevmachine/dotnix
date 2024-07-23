@@ -1,5 +1,7 @@
 {
   imports = [
+    ../../../profiles/nixos/hardware/audio.nix
+
     ../../../profiles/common/nix/arguments.nix
     ../../../profiles/nixos/nix/persistence.nix
     ../../../profiles/common/nix/settings.nix
