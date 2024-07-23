@@ -1,6 +1,7 @@
 {
   imports = [
     ../../../profiles/nixos/boot/efi.nix
+    ../../../profiles/nixos/boot/kernel.nix
 
     ../../../profiles/nixos/hardware/audio.nix
     ../../../profiles/nixos/hardware/firmware.nix
