@@ -13,6 +13,7 @@
     ../../../profiles/nixos/network/core.nix
     ../../../profiles/nixos/network/ssh.nix
     ../../../profiles/nixos/network/wired.nix
+    ../../../profiles/nixos/network/wireless.nix
 
     ../../../profiles/common/nix/arguments.nix
     ../../../profiles/nixos/nix/persistence.nix
