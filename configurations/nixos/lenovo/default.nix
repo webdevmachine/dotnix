@@ -2,6 +2,7 @@
   imports = [
     ../../../profiles/nixos/hardware/audio.nix
     ../../../profiles/nixos/hardware/firmware.nix
+    ../../../profiles/nixos/hardware/graphics.nix
 
     ../../../profiles/common/nix/arguments.nix
     ../../../profiles/nixos/nix/persistence.nix
