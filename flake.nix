@@ -15,6 +15,10 @@
       url = "github:nix-systems/default";
     };
 
+    flake-compat = {
+      url = "github:edolstra/flake-compat";
+    };
+
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
       inputs.nixpkgs-lib.follows = "nixpkgs";
@@ -48,6 +52,7 @@
       inputs = {
         nixpkgs.follows = "nixpkgs";
         nixpkgs-stable.follows = "nixpkgs";
+        flake-compat.follows = "flake-compat";
         gitignore.follows = "gitignore";
       };
     };
@@ -65,6 +70,16 @@
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    lanzaboote = {
+      url = "github:nix-community/lanzaboote";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        flake-compat.follows = "flake-compat";
+        flake-parts.follows = "flake-parts";
+        pre-commit-hooks-nix.follows = "git-hooks";
+      };
     };
 
     nixos-hardware = {
