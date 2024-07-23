@@ -24,6 +24,7 @@
     ../../../profiles/nixos/nix/settings.nix
 
     ../../../profiles/system/users/core.nix
+    ../../../profiles/nixos/users/core.nix
 
     ./filesystem.nix
     ./hardware/cpu.nix
