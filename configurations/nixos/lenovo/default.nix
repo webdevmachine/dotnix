@@ -43,9 +43,14 @@
   nixpkgs.hostPlatform = "x86_64-linux";
   system.stateVersion = "24.11";
 
-  age.rekey = {
-    hostPubkey = ./identity.pub;
-    localStorageDir = ./secrets/rekeyed;
-    generatedSecretsDir = ./secrets/generated;
+  age = {
+    rekey = {
+      hostPubkey = ./secrets/identity.pub;
+      localStorageDir = ./secrets/rekeyed;
+      generatedSecretsDir = ./secrets/generated;
+    };
+    secrets = {
+      "system.identity".rekeyFile = ./secrets/identity.age;
+    };
   };
 }
