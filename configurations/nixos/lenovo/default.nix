@@ -1,6 +1,7 @@
 {
   imports = [
     ../../../profiles/common/nix/arguments.nix
+    ../../../profiles/nixos/nix/persistence.nix
     ../../../profiles/common/nix/settings.nix
     ../../../profiles/nixos/nix/settings.nix
 
