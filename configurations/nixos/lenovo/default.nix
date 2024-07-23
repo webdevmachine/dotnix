@@ -17,6 +17,9 @@
 
     ../../../profiles/common/nix/arguments.nix
     ../../../profiles/nixos/nix/persistence.nix
+    ../../../profiles/common/nix/secrets
+    ../../../profiles/system/nix/secrets.nix
+    ../../../profiles/nixos/nix/secrets.nix
     ../../../profiles/common/nix/settings.nix
     ../../../profiles/nixos/nix/settings.nix
 
@@ -30,4 +33,10 @@
   networking.hostName = "lenovo";
   nixpkgs.hostPlatform = "x86_64-linux";
   system.stateVersion = "24.11";
+
+  age.rekey = {
+    hostPubkey = ./identity.pub;
+    localStorageDir = ./secrets/rekeyed;
+    generatedSecretsDir = ./secrets/generated;
+  };
 }
