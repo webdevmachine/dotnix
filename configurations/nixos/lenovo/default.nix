@@ -30,6 +30,7 @@
     ../../../profiles/nixos/users/root.nix
     ../../../profiles/common/users/webdevmachine
     ../../../profiles/system/users/webdevmachine.nix
+    ../../../profiles/nixos/users/webdevmachine.nix
 
     ./filesystem.nix
     ./hardware/cpu.nix
