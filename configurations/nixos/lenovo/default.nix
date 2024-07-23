@@ -28,6 +28,7 @@
     ../../../profiles/common/users/root
     ../../../profiles/system/users/root.nix
     ../../../profiles/nixos/users/root.nix
+    ../../../profiles/common/users/webdevmachine
 
     ./filesystem.nix
     ./hardware/cpu.nix
