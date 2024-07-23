@@ -10,6 +10,8 @@
     ../../../profiles/nixos/hardware/graphics.nix
     ../../../profiles/nixos/hardware/laptop.nix
 
+    ../../../profiles/nixos/network/core.nix
+
     ../../../profiles/common/nix/arguments.nix
     ../../../profiles/nixos/nix/persistence.nix
     ../../../profiles/common/nix/settings.nix
