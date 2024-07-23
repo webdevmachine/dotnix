@@ -11,6 +11,7 @@
     ../../../profiles/nixos/hardware/laptop.nix
 
     ../../../profiles/nixos/network/core.nix
+    ../../../profiles/nixos/network/ssh.nix
 
     ../../../profiles/common/nix/arguments.nix
     ../../../profiles/nixos/nix/persistence.nix
