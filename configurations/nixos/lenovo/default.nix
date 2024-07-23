@@ -1,5 +1,7 @@
 {
   imports = [
+    ../../../profiles/common/nix/arguments.nix
+
     ./filesystem.nix
     ./hardware/cpu.nix
     ./hardware/gpu.nix
