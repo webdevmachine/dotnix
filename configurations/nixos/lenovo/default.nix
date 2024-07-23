@@ -23,6 +23,8 @@
     ../../../profiles/common/nix/settings.nix
     ../../../profiles/nixos/nix/settings.nix
 
+    ../../../profiles/system/users/core.nix
+
     ./filesystem.nix
     ./hardware/cpu.nix
     ./hardware/gpu.nix
