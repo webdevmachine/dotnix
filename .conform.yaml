@@ -21,5 +21,6 @@ policies:
         scopes:
           - flake
           - profiles
+          - suites
           - systems
           - users
