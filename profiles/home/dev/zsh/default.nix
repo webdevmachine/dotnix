@@ -1,4 +1,6 @@
 {
+  imports = [ ./plugins/spaceship-prompt.nix ];
+
   programs.zsh = {
     enable = true;
     history = {
