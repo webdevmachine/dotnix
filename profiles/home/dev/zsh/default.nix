@@ -3,6 +3,7 @@
     ./plugins/autopair.nix
     ./plugins/autosuggestions.nix
     ./plugins/fast-syntax-highlighting.nix
+    ./plugins/fzf-tab.nix
     ./plugins/spaceship-prompt.nix
     ./plugins/vi-mode.nix
   ];
