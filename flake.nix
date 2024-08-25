@@ -3,7 +3,10 @@
     inputs@{ flake-parts, systems, ... }:
     flake-parts.lib.mkFlake { inherit inputs; } {
       systems = import systems;
-      imports = [ ./profiles/flake/devshell.nix ];
+      imports = [
+        ./profiles/flake/devshell.nix
+        ./profiles/flake/formatter.nix
+      ];
     };
 
   inputs = {
@@ -19,6 +22,11 @@
 
     devshell = {
       url = "github:numtide/devshell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    treefmt-nix = {
+      url = "github:numtide/treefmt-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
