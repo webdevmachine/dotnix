@@ -28,6 +28,8 @@
 
         check-executables-have-shebangs.enable = true;
         check-shebang-scripts-are-executable.enable = true;
+
+        lua-ls.enable = true;
       };
 
       devshells.default = {
