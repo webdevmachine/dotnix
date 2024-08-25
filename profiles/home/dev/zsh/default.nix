@@ -1,5 +1,8 @@
 {
-  imports = [ ./plugins/spaceship-prompt.nix ];
+  imports = [
+    ./plugins/spaceship-prompt.nix
+    ./plugins/vi-mode.nix
+  ];
 
   programs.zsh = {
     enable = true;

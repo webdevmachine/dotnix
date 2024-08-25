@@ -1,0 +1,36 @@
+#! /bin/bash
+
+SPACESHIP_VI_MODE_SHOW="${SPACESHIP_VI_MODE_SHOW=true}"
+SPACESHIP_VI_MODE_PREFIX="${SPACESHIP_VI_MODE_PREFIX=" "}"
+SPACESHIP_VI_MODE_SUFFIX="${SPACESHIP_VI_MODE_SUFFIX=" "}"
+SPACESHIP_VI_MODE_COLOR="${SPACESHIP_VI_MODE_COLOR="white"}"
+
+SPACESHIP_VI_MODE_NORMAL="${SPACESHIP_VI_MODE_NORMAL="normal"}"
+SPACESHIP_VI_MODE_INSERT="${SPACESHIP_VI_MODE_INSERT="insert"}"
+SPACESHIP_VI_MODE_VISUAL="${SPACESHIP_VI_MODE_VISUAL="visual"}"
+SPACESHIP_VI_MODE_VISUAL_LINE="${SPACESHIP_VI_MODE_VISUAL_LINE="v-line"}"
+SPACESHIP_VI_MODE_REPLACE="${SPACESHIP_VI_MODE_REPLACE="replace"}"
+
+spaceship_vi_mode() {
+  [[ $SPACESHIP_VI_MODE_SHOW == false ]] && return
+
+  spaceship::section::v4 \
+    --prefix "$SPACESHIP_VI_MODE_PREFIX" \
+    --suffix "$SPACESHIP_VI_MODE_SUFFIX" \
+    --color "$SPACESHIP_VI_MODE_COLOR" \
+    "$(vi_mode_indicator)"
+}
+
+zvm_after_select_vi_mode() {
+  spaceship::core::refresh_section "vi_mode"
+}
+
+vi_mode_indicator() {
+  case "$ZVM_MODE" in
+  "$ZVM_MODE_NORMAL") echo "$SPACESHIP_VI_MODE_NORMAL" ;;
+  "$ZVM_MODE_INSERT") echo "$SPACESHIP_VI_MODE_INSERT" ;;
+  "$ZVM_MODE_VISUAL") echo "$SPACESHIP_VI_MODE_VISUAL" ;;
+  "$ZVM_MODE_VISUAL_LINE") echo "$SPACESHIP_VI_MODE_VISUAL_LINE" ;;
+  "$ZVM_MODE_REPLACE") echo "$SPACESHIP_VI_MODE_REPLACE" ;;
+  esac
+}
