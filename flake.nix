@@ -7,6 +7,7 @@
         ./profiles/flake/devshell.nix
         ./profiles/flake/formatter.nix
         ./profiles/flake/git-hooks.nix
+        ./profiles/flake/systems.nix
       ];
     };
 
@@ -37,6 +38,11 @@
         nixpkgs.follows = "nixpkgs";
         nixpkgs-stable.follows = "nixpkgs";
       };
+    };
+
+    nix-darwin = {
+      url = "github:lnl7/nix-darwin";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 }
