@@ -15,6 +15,9 @@
         mixed-line-endings.enable = true;
         trim-trailing-whitespace.enable = true;
         typos.enable = true;
+
+        editorconfig-checker.enable = true;
+        treefmt.enable = true;
       };
 
       devshells.default = {
