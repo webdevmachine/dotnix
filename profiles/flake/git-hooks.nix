@@ -22,6 +22,9 @@
         conform.enable = true;
         check-merge-conflicts.enable = true;
         forbid-new-submodules.enable = true;
+
+        flake-checker.enable = true;
+        nil.enable = true;
       };
 
       devshells.default = {
