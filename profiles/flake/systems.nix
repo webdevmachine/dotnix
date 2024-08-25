@@ -1,3 +1,13 @@
+{ inputs, ... }:
+let
+  inherit (inputs.nix-darwin.lib) darwinSystem;
+in
 {
-  flake = { };
+  flake = {
+    darwinConfigurations = {
+      workbook = darwinSystem {
+        modules = [ ../../systems/workbook ];
+      };
+    };
+  };
 }
