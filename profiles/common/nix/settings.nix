@@ -6,10 +6,11 @@
 }:
 let
   inherit (lib.attrsets) mapAttrs mapAttrsToList setAttrByPath;
+  inherit (lib.modules) mkForce;
 in
 {
   nix = {
-    package = pkgs.nix;
+    package = mkForce pkgs.nix;
 
     settings = {
       accept-flake-config = true;
