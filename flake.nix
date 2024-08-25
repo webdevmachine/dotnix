@@ -8,6 +8,7 @@
         ./profiles/flake/formatter.nix
         ./profiles/flake/git-hooks.nix
         ./profiles/flake/systems.nix
+        ./profiles/flake/users.nix
       ];
     };
 
@@ -42,6 +43,11 @@
 
     nix-darwin = {
       url = "github:lnl7/nix-darwin";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    home-manager = {
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
