@@ -1,0 +1,23 @@
+policies:
+  - type: commit
+    spec:
+      header:
+        case: lower
+        imperative: true
+        invalidLastCharacters: .
+        length: 90
+      body:
+        required: false
+      gpg:
+        required: true
+      spellcheck:
+        locale: US
+      conventional:
+        descriptionLength: 70
+        types:
+          - feat
+          - chore
+          - fix
+        scopes:
+          - flake
+          - profiles

@@ -18,6 +18,10 @@
 
         editorconfig-checker.enable = true;
         treefmt.enable = true;
+
+        conform.enable = true;
+        check-merge-conflicts.enable = true;
+        forbid-new-submodules.enable = true;
       };
 
       devshells.default = {
