@@ -14,12 +14,18 @@
           deadnix.enable = true;
           statix.enable = true;
           nixfmt.enable = true;
+
+          shellcheck.enable = true;
+          shfmt.enable = true;
         };
 
         settings.formatter = {
           deadnix.priority = 1;
           statix.priority = 2;
           nixfmt.priority = 3;
+
+          shellcheck.priority = 1;
+          shfmt.priority = 2;
         };
       };
 
