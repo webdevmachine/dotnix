@@ -6,6 +6,7 @@
       imports = [
         ./profiles/flake/devshell.nix
         ./profiles/flake/formatter.nix
+        ./profiles/flake/git-hooks.nix
       ];
     };
 
@@ -28,6 +29,14 @@
     treefmt-nix = {
       url = "github:numtide/treefmt-nix";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    git-hooks = {
+      url = "github:cachix/git-hooks.nix";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        nixpkgs-stable.follows = "nixpkgs";
+      };
     };
   };
 }
