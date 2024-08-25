@@ -1,6 +1,7 @@
 {
   imports = [
     ./plugins/autopair.nix
+    ./plugins/autosuggestions.nix
     ./plugins/spaceship-prompt.nix
     ./plugins/vi-mode.nix
   ];
