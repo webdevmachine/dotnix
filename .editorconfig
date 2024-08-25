@@ -5,7 +5,13 @@ charset = utf-8
 end_of_line = lf
 indent_size = tab
 indent_style = space
+quote_type = double
 trim_trailing_whitespace = true
 insert_final_newline = true
 max_line_length = 100
 tab_width = 2
+
+[*.lua]
+call_parentheses = Always
+collapse_simple_statement = FunctionOnly
+sort_requires = true
