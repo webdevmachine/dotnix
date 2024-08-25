@@ -2,6 +2,7 @@
   imports = [
     ../../profiles/common/nix/arguments.nix
     ../../profiles/common/nix/settings.nix
+    ../../profiles/darwin/nix/settings.nix
   ];
 
   networking.hostName = "NS-WRF00K0P79";
