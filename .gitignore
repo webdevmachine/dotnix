@@ -1,0 +1,7 @@
+# code editors
+/Session.vim
+/.vscode
+/.idea
+
+# generated
+/result
