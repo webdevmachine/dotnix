@@ -6,13 +6,10 @@
   system.stateVersion = 4;
 
   users.users = {
-    webdevmachine = {
-      name = "patrykszydlowski";
-      home = "/Users/patrykszydlowski";
-    };
+    patrykszydlowski.home = "/Users/patrykszydlowski";
   };
 
   home-manager.users = {
-    webdevmachine = ../../users/webdevmachine/workbook.nix;
+    patrykszydlowski = ../../users/webdevmachine/workbook.nix;
   };
 }
